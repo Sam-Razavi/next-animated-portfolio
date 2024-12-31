@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 const Homepage = () => {
     return (
@@ -37,9 +38,12 @@ const Homepage = () => {
                     </p>
                     {/* BUTTONS */}
                     <div className="w-full flex gap-4">
-                        <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-                            View My Work
-                        </button>
+                        {/* Portfolio Button */}
+                        <Link href="/portfolio">
+                            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+                                View My Work
+                            </button>
+                        </Link>
                         <button className="p-4 rounded-lg ring-1 ring-black">
                             <a
                                 href="mailto:sam@samincodes.com"

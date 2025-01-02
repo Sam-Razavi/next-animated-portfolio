@@ -485,4 +485,4 @@ const AboutPage = () => {
 }
 
 export default AboutPage
-// some comments
+

@@ -400,6 +400,73 @@ const AboutPage = () => {
                             </div>
                         </motion.div>
                     </div>
+                    <div className="flex flex-col gap-12 justify-center pb-48">
+                        {/* CERTIFICATES TITLE */}
+                        <motion.h1
+                            initial={{ x: '-300px' }}
+                            animate={{ x: '0' }}
+                            transition={{ delay: 0.2 }}
+                            className="font-bold text-2xl"
+                        >
+                            CERTIFICATES
+                        </motion.h1>
+
+                        {/* CERTIFICATES GRID */}
+                        <motion.div
+                            initial={{ x: '-300px' }}
+                            animate={{ x: '0' }}
+                            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                        >
+                            {[
+                                {
+                                    title: 'Cyber Security Essentials',
+                                    img: '/Certificate-Cyber.png',
+                                    description: 'Linköping University'
+                                },
+                                {
+                                    title: 'Introduction to AI (Elements of AI)',
+                                    img: '/university-of-helsinki.png',
+                                    description: 'University of Helsinki'
+                                },
+                                {
+                                    title: 'Applied IoT Certification',
+                                    img: '/certificate-IOT.png',
+                                    description: 'Linnaeus University'
+                                },
+                                {
+                                    title: 'AI Sweden: Organization and Application',
+                                    img: '/AI Sweden.png',
+                                    description: 'AI Sweden Program'
+                                },
+                                {
+                                    title: 'JavaScript Developer',
+                                    img: '/IT-logo.png',
+                                    description: 'IT-Högskolan Sverige AB'
+                                }
+                            ].map((cert, index) => (
+                                <div
+                                    key={index}
+                                    className="bg-white p-4 rounded shadow-md hover:shadow-lg transition-shadow"
+                                >
+                                    <div className="relative w-full h-40">
+                                        <Image
+                                            src={cert.img}
+                                            alt={cert.title}
+                                            layout="fill"
+                                            objectFit="contain"
+                                            className="rounded"
+                                        />
+                                    </div>
+                                    <h3 className="font-bold mt-4">
+                                        {cert.title}
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        {cert.description}
+                                    </p>
+                                </div>
+                            ))}
+                        </motion.div>
+                    </div>
                 </div>
                 <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
                     <Brain scrollYProgress={scrollYProgress} />

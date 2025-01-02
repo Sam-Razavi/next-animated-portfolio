@@ -16,6 +16,11 @@ const AboutPage = () => {
     const experienceRef = useRef()
     const isExperienceRefInView = useInView(experienceRef, { margin: '-100px' })
 
+    const certificatesRef = useRef()
+    const isCertificatesRefInView = useInView(certificatesRef, {
+        margin: '-100px'
+    })
+
     return (
         <motion.div
             className="h-full"
@@ -400,11 +405,14 @@ const AboutPage = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="flex flex-col gap-12 justify-center pb-48">
+                    <div
+                        className="flex flex-col gap-12 justify-center pb-48"
+                        ref={certificatesRef} // Add the reference for visibility tracking
+                    >
                         {/* CERTIFICATES TITLE */}
                         <motion.h1
                             initial={{ x: '-300px' }}
-                            animate={{ x: '0' }}
+                            animate={isCertificatesRefInView ? { x: '0' } : {}}
                             transition={{ delay: 0.2 }}
                             className="font-bold text-2xl"
                         >
@@ -414,7 +422,7 @@ const AboutPage = () => {
                         {/* CERTIFICATES GRID */}
                         <motion.div
                             initial={{ x: '-300px' }}
-                            animate={{ x: '0' }}
+                            animate={isCertificatesRefInView ? { x: '0' } : {}}
                             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                         >
                             {[

@@ -310,7 +310,7 @@ const AboutPage = () => {
                                         Internship
                                     </div>
                                     <div className="p-3 text-sm italic">
-                                    Enhanced recruiter-consultant connections by contributing to a project utilizing JavaScript, Angular, Bootstrap, SCSS, TypeScript, AWS, Git/GitHub, and PostgreSQL.
+                                    Streamlined recruiter-consultant interactions using Angular, PostgreSQL, and modern web tools.
                                     </div>
                                     <div className="p-3 text-red-400 text-sm font-semibold">
                                         2024
@@ -338,11 +338,7 @@ const AboutPage = () => {
                                         Internship
                                     </div>
                                     <div className="p-3 text-sm italic">
-                                        Supported frontend development for a
-                                        Smart RoomHub’s platform, aligning with
-                                        Devward&apos;s aim to improve energy
-                                        efficiency and indoor air quality
-                                        through AI.
+                                    Frontend development for Smart RoomHub to enhance energy efficiency and air quality with AI.
                                     </div>
                                     <div className="p-3 text-red-400 text-sm font-semibold">
                                         2023

@@ -310,11 +310,7 @@ const AboutPage = () => {
                                         Internship
                                     </div>
                                     <div className="p-3 text-sm italic">
-                                        Contributed to a project enhancing
-                                        recruiter-consultant connections using
-                                        JavaScript and Angular, alongside
-                                        Bootstrap, SCSS, AWS, Git/GitHub,
-                                        TypeScript, and PostgreSQL.
+                                    Enhanced recruiter-consultant connections by contributing to a project utilizing JavaScript, Angular, Bootstrap, SCSS, TypeScript, AWS, Git/GitHub, and PostgreSQL.
                                     </div>
                                     <div className="p-3 text-red-400 text-sm font-semibold">
                                         2024
@@ -485,4 +481,3 @@ const AboutPage = () => {
 }
 
 export default AboutPage
-

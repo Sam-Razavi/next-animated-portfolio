@@ -83,7 +83,7 @@ const Navbar = () => {
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center"
         >
           <span className="text-white mr-1">Sam</span>
-          <span className="w-14 h-8 rounded bg-white text-black flex items-center justify-center">
+          <span className="w-16 h-8 rounded bg-white text-black flex items-center justify-center">
             InCodes
           </span>
         </Link>

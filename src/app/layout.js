@@ -7,6 +7,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Sam In Codes",
   description: "Explore my portfolio showcasing projects, skills, and certifications as a web developer.",
+  icons: {
+    icon: "/favicon.ico", // Path to your favicon in the `public` folder
+  },
 };
 
 export default function RootLayout({ children }) {

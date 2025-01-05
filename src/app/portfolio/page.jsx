@@ -15,6 +15,14 @@ const items = [
     },
     {
         id: 2,
+        color: 'from-green-300 to-blue-300',
+        title: 'MERN Real-Time Chat App',
+        desc: 'A real-time chat application built with the MERN stack, featuring authentication with JWT, real-time messaging with Socket.io, and responsive UI with TailwindCSS and Daisy UI. Users can securely log in, send messages instantly, and view online user statuses.',
+        img: '/React-chat-app-first.jpg',
+        link: 'https://mern-chat-app-oovz.onrender.com//'
+    },
+    {
+        id: 3,
         color: 'from-blue-300 to-green-300',
         title: 'Recipe Application',
         desc: 'A feature-rich recipe app enabling users to search for recipes, view instructions, and upload their custom recipes.',
@@ -22,7 +30,7 @@ const items = [
         link: 'https://forkify-sam-razavi.netlify.app/?#664c8f193e7aa067e94e886e'
     },
     {
-        id: 3,
+        id: 4,
         color: 'from-violet-300 to-purple-300',
         title: 'Cross-Platform Mobile App',
         desc: 'A working project similar to Twitter, built with React Native, Typescript, and Firebase. Features user registration, post creation, and language toggle.',
@@ -30,7 +38,7 @@ const items = [
         link: 'https://github.com/Sam-Razavi/crossplatform-mobile/tree/master/crossplatform-mobile'
     },
     {
-        id: 4,
+        id: 5,
         color: 'from-green-300 to-yellow-300',
         title: 'To-Do List Application',
         desc: 'A user-friendly app for managing daily tasks. Features include adding tasks, marking them as completed, and filtering by due dates.',
@@ -38,7 +46,7 @@ const items = [
         link: 'https://to-do-list-sam-razavi.netlify.app/'
     },
     {
-        id: 5,
+        id: 6,
         color: 'from-blue-300 to-violet-300',
         title: 'Vue Exchange App',
         desc: 'A simple Vue.js app for exchanging currency with a clean interface.',
@@ -46,7 +54,7 @@ const items = [
         link: 'https://vue-chi-one.vercel.app'
     },
     {
-        id: 6,
+        id: 7,
         color: 'from-red-300 to-blue-300',
         title: 'Vue Weather App',
         desc: 'A weather forecasting app built with Vue.js, fetching real-time weather data using an external API. Includes a bonus feature to convert temperatures between Celsius and Fahrenheit seamlessly.',
@@ -54,7 +62,7 @@ const items = [
         link: 'https://vue-weather-ruby.vercel.app'
     },
     {
-        id: 7,
+        id: 8,
         color: 'from-green-300 to-yellow-300',
         title: 'Calculator App',
         desc: 'A simple calculator app built with html and css.',
@@ -62,7 +70,7 @@ const items = [
         link: 'https://sam-razavi.github.io/Calculator/'
     },
     {
-        id: 8,
+        id: 9,
         color: 'from-green-300 to-yellow-300',
         title: 'To-Do List Application',
         desc: 'A simple calculator app built with html and css.',
@@ -132,12 +140,12 @@ const PortfolioPage = () => {
                             repeat: Infinity
                         }}
                         viewBox="0 0 300 300"
-                        className="w-64 h-64 md:w-[500px] md:h-[500px] "
+                        className="w-64 h-64 md:w-[500px] md:h-[500px]"
                     >
                         <defs>
                             <path
                                 id="circlePath"
-                                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                                d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0"
                             />
                         </defs>
                         <text fill="#000">
@@ -156,6 +164,15 @@ const PortfolioPage = () => {
                         Hire Me
                     </Link>
                 </div>
+                {/* Back to Top Button */}
+                <button
+                    className="mt-8 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-700"
+                    onClick={() =>
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                    }
+                >
+                    ↑ Back to Top
+                </button>
             </div>
         </motion.div>
     )

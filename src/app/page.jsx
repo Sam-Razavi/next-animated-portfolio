@@ -47,9 +47,9 @@ const Homepage = () => {
                         <button className="p-4 rounded-lg ring-1 ring-black">
                             <a
                                 href="mailto:sam@samincodes.com"
-                                class="icon solid fa-envelope"
+                                className="icon solid fa-envelope"
                             >
-                                <span class="label">Contact Me</span>
+                                <span className="label">Contact Me</span>
                             </a>
                         </button>
                     </div>

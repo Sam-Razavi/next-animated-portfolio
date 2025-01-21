@@ -5,12 +5,12 @@ import { useEffect } from 'react'
 
 export default function GoogleAnalytics() {
     useEffect(() => {
-        console.log('Google Analytics component mounted')
+        // console.log('Google Analytics component mounted')
 
         if (typeof window.gtag === 'function') {
-            console.log('Google Analytics is initialized')
+            // console.log('Google Analytics is initialized')
         } else {
-            console.log('Google Analytics is not yet initialized')
+            // console.log('Google Analytics is not yet initialized')
         }
     }, [])
 

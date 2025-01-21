@@ -310,7 +310,9 @@ const AboutPage = () => {
                                         Internship
                                     </div>
                                     <div className="p-3 text-sm italic">
-                                    Streamlined recruiter-consultant interactions using Angular, PostgreSQL, and modern web tools.
+                                        Streamlined recruiter-consultant
+                                        interactions using Angular, PostgreSQL,
+                                        and modern web tools.
                                     </div>
                                     <div className="p-3 text-red-400 text-sm font-semibold">
                                         2024
@@ -338,7 +340,9 @@ const AboutPage = () => {
                                         Internship
                                     </div>
                                     <div className="p-3 text-sm italic">
-                                    Frontend development for Smart RoomHub to enhance energy efficiency and air quality with AI.
+                                        Frontend development for Smart RoomHub
+                                        to enhance energy efficiency and air
+                                        quality with AI.
                                     </div>
                                     <div className="p-3 text-red-400 text-sm font-semibold">
                                         2023
@@ -452,11 +456,13 @@ const AboutPage = () => {
                                         <Image
                                             src={cert.img}
                                             alt={cert.title}
-                                            layout="fill"
-                                            objectFit="contain"
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Define responsive sizes
+                                            style={{ objectFit: 'contain' }} // Ensure proper styling
                                             className="rounded"
                                         />
                                     </div>
+
                                     <h3 className="font-bold mt-4">
                                         {cert.title}
                                     </h3>

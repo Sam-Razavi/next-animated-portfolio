@@ -446,6 +446,11 @@ const AboutPage = () => {
                                     title: 'JavaScript Developer',
                                     img: '/IT-logo.png',
                                     description: 'IT-Högskolan Sverige AB'
+                                },
+                                {
+                                    title: 'Software Engineering - Python',
+                                    img: '/Dalarna-Logo.png',
+                                    description: 'Dalarna University'
                                 }
                             ].map((cert, index) => (
                                 <div

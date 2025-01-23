@@ -127,7 +127,7 @@ const PortfolioPage = () => {
                                             priority={item.id === 1} // Add priority only for the first visible image
                                         />
                                     </div>
-                                    <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
+                                    <p className="w-80 md:w-96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                                         {item.desc}
                                     </p>
                                     <div className="flex gap-4 justify-end">
@@ -197,7 +197,7 @@ const PortfolioPage = () => {
                 <motion.button
                     className="mt-8 bg-black text-white p-4 rounded-full shadow-lg hover:bg-gray-700"
                     onClick={() =>
-                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                        window.scroll({ top: 0, behavior: 'smooth' })
                     }
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

@@ -228,6 +228,9 @@ const AboutPage = () => {
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Node.js
                             </div>
+                            <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                                Python
+                            </div>
 
                             <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                                 Scrum

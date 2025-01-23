@@ -20,7 +20,7 @@ const items = [
         title: 'MERN Real-Time Chat App',
         desc: 'A real-time chat application built with the MERN stack, featuring authentication with JWT, real-time messaging with Socket.io, and responsive UI with TailwindCSS and Daisy UI. Users can securely log in, send messages instantly, and view online user statuses.',
         img: '/React-chat-app-first.jpg',
-        link: 'https://mern-chat-app-oovz.onrender.com//',
+        link: 'https://mern-chat-app-oovz.onrender.com/',
         sourceCode: 'https://github.com/Sam-Razavi/mern-chat-app'
     },
     {

@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import TransitionProvider from '@/components/transitionProvider';
 import ClientWrapper from './ClientWrapper'; // Import the wrapper
+import { Analytics } from '@vercel/analytics/next';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
                 <TransitionProvider>
                     <ClientWrapper>{children}</ClientWrapper>
                 </TransitionProvider>
+                <Analytics />
             </body>
         </html>
     );
